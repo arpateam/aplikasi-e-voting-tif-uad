@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">E-voting TIF</string>
+    <string name="home">WELCOME\nENGINEER MUDA!\nBERIKAN PILAHAN BIJAKMU!</string>
+    <string name="cari">YUK,\nCEK DAFTAR\nPEMILIH TETAP ANDA</string>
+    <string name="vote"></string>
+    <string name="hasil">HASIL PERHITUNGAN\nSURAT SUARA SAH!</string>
+    <string name="kritik">Yuk berikan\nkritik saran untuk kami</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

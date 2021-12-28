@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KritikSaran">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="3dp"
+        android:background="@color/blue"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kritik"
+        android:textAlignment="center"
+        android:textColor="@color/black1"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/kritiksaran"
+        android:paddingLeft="10dp"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:hint="Tulis kritik Saran anda di sini..."
+        android:background="@drawable/bg_form" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <Button
+        android:id="@+id/kirim"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="Kirim"
+        android:drawableStart="@drawable/kirim"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"></ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/Dpt"
+        android:title="Cek DPT"
+        />
+    <item
+        android:id="@+id/Vote"
+        android:title="Vote"
+        />
+    <item
+        android:id="@+id/HasilVote"
+        android:title="Hasil Vote"
+        />
+    <item
+        android:id="@+id/Kritik"
+        android:title="Kritik Saran"
+        />
+
+    <item
+        android:id="@+id/Help"
+        android:title="Help"
+        >
+        <menu>
+            <item
+                android:id="@+id/Contact"
+                android:title="Contact Us"/>
+            <item
+                android:id="@+id/Insta"
+                android:title="Instagram"/>
+            <item
+                android:id="@+id/YouTube"
+                android:title="YouTube"/>
+        </menu>
+    </item>
+</menu>

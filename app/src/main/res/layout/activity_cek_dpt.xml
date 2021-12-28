@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="3dp"
+        android:background="@color/blue"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cari"
+                android:textAlignment="center"
+                android:textColor="@color/black1"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_weight="1"
+                android:src="@drawable/vote1"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingLeft="80dp"
+            android:paddingRight="70dp">
+
+            <EditText
+                android:id="@+id/nim"
+                android:layout_width="238dp"
+                android:layout_height="37dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/bg_form"
+                android:paddingLeft="10dp"
+                android:hint="  NIM (10 digit)" />
+
+            <ImageButton
+                android:id="@+id/cek"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/bg_form"
+                android:src="@drawable/cari"
+                android:onClick="caridpt"/>
+        </RelativeLayout>
+    </LinearLayout>

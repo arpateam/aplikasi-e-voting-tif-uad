@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dvote">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="3dp"
+        android:background="@color/blue"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOTE"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <CheckBox
+        android:id="@+id/paslon1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/paslon1"
+        android:text="PASLON NOMOR 1 CIAYOOO UWOOO!"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <CheckBox
+        android:id="@+id/paslon2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/paslon2"
+        android:text="PASLON NOMOR 2 GASKUN NGUWENG!"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <Button
+        android:id="@+id/pilih"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="VOTE"
+        android:drawableStart="@drawable/voteputih"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

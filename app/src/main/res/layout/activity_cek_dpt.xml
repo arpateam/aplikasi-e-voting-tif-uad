@@ -65,7 +65,7 @@
                 android:layout_marginEnd="22dp"
                 android:background="@drawable/bg_form"
                 android:paddingLeft="10dp"
-                android:hint="  NIM (10 digit)" />
+                android:hint="NIM (10 digit)" />
 
             <ImageButton
                 android:id="@+id/cek"

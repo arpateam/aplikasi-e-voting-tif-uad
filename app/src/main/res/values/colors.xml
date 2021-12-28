@@ -9,4 +9,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#1D509F</color>
     <color name="black1">#272E35</color>
+
+<!--    This is import color from Bootstrap v4-->
+    <color name="primaryColor">#007BFF</color>
+    <color name="secondaryColor">#6C757D</color>
+    <color name="successColor">#28A745</color>
+    <color name="dangerColor">#DC3545</color>
+    <color name="warningColor">#FFC107</color>
+    <color name="infoColor">#17A2B8</color>
+    <color name="lightColor">#F8F9FA</color>
+    <color name="darkColor">#343A40</color>
 </resources>

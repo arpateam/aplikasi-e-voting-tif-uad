@@ -5,6 +5,9 @@
     <string name="vote"></string>
     <string name="hasil">HASIL PERHITUNGAN\nSURAT SUARA SAH!</string>
     <string name="kritik">Yuk berikan\nkritik saran untuk kami</string>
+    <string name="paslon01">PASLON 01\n(WIDA GHAIB NUGROHO - SUPRAYOGI BUDI .P) : </string>
+    <string name="paslon02">PASLON 02\n(WISNU ANDRIAN - AMIRATUR RAFIFAH) : </string>
+    <string name="golput">GOLPUT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

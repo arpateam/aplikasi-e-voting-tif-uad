@@ -29,7 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CekDPT extends Activity {
-    public static  final String url = "https://mywebsasa.000webhostapp.com/data_mahasiswa_aktif.php";
+    public static final String url = "https://mywebsasa.000webhostapp.com/data_mahasiswa_aktif.php";
     EditText Nim;
     ImageButton Cek;
     TextView TampilNama;

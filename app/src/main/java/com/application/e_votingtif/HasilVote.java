@@ -58,6 +58,48 @@ public class HasilVote extends Activity {
         presentasKemenangan = (TextView) findViewById(R.id.presentasKemenangan);
         displayData();
     }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public  boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.Home:
+                Intent home=new Intent(HasilVote.this, MainActivity.class);
+                startActivity(home);
+                Toast.makeText(HasilVote.this, "Home", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.Dpt:
+                Intent dpt=new Intent(HasilVote.this, CekDPT.class);
+                startActivity(dpt);
+                Toast.makeText(HasilVote.this, "Cek DPT", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.Vote:
+                Intent vote=new Intent(HasilVote.this, Vote.class);
+                startActivity(vote);
+                Toast.makeText(HasilVote.this, "Vote", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.HasilVote:
+                Intent hasil=new Intent(HasilVote.this, HasilVote.class);
+                startActivity(hasil);
+                Toast.makeText(HasilVote.this, "Hasil Vote", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.Kritik:
+                Intent ks=new Intent(HasilVote.this, KritikSaran.class);
+                startActivity(ks);
+                Toast.makeText(HasilVote.this, "Kritik Saran", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.Help:
+                Toast.makeText(HasilVote.this, "Help", Toast.LENGTH_LONG).show();
+                return true;
+            default :
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
     private void displayData() {
         // Instantiate the RequestQueue.

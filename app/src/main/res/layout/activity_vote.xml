@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -16,57 +20,72 @@
         android:layout_height="3dp"
         android:background="@color/blue"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="5dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/kop_surat_suara"
+        android:contentDescription="Kop Surat Suara"
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="VOTE"
+        android:text="KETUA DAN WAKIL KETUA HMTIF"
         android:textAlignment="center"
         android:textColor="@color/blue"
-        android:textSize="50dp"
+        android:textSize="32dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp"
         android:textStyle="bold"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"/>
-    <CheckBox
-        android:id="@+id/paslon1"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/paslon1"
-        android:text="PASLON NOMOR 1 CIAYOOO UWOOO!"
-        android:textStyle="bold"
+        android:text="TAHUN 2021"
         android:textAlignment="center"
-        />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="15dp"/>
-    <CheckBox
-        android:id="@+id/paslon2"
-        android:layout_width="match_parent"
+        android:textColor="@color/blue"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/paslon2"
-        android:text="PASLON NOMOR 2 GASKUN NGUWENG!"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="246dp"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:src="@drawable/paslon_01" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:src="@drawable/paslon_02"></ImageView>
+    </LinearLayout>
+
     <Button
-        android:id="@+id/pilih"
-        android:paddingLeft="10dp"
+        android:id="@+id/btnVote"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:background="@drawable/bg_button"
+        android:background="@color/blue"
         android:layout_gravity="center"
         android:textAllCaps="false"
-        android:text="VOTE"
+        android:text="VOTE SEKARANG JUGA"
         android:drawableStart="@drawable/voteputih"
-        android:layout_width="145dp"
+        android:layout_width="fill_parent"
+        android:layout_marginHorizontal="5dp"
+        android:paddingLeft="25dp"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>
+</ScrollView>

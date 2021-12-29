@@ -54,17 +54,16 @@
         tools:ignore="UselessLeaf" />
 
     <LinearLayout
-        android:layout_marginRight="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginHorizontal="50dp"
         android:background="@drawable/bg_dialog"
         android:layout_width="match_parent"
-        android:layout_height="130dp">
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingTop="15dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp"
             tools:ignore="RtlHardcoded,RtlSymmetry">
             <TextView
                 android:textColor="@color/blue"
@@ -74,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/yes"
                 android:id="@+id/tampilNama"
-                android:text="  Tampil Nama"
+                android:text="  Tunggu sebentar..."
                 tools:ignore="HardcodedText,SpUsage,UseCompatTextViewDrawableXml" />
             <TextView
                 android:textColor="@color/blue"
@@ -84,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/yes"
                 android:id="@+id/tampilJadwal"
-                android:text="  Tampil Jadwal Voting"
+                android:text="  Tunggu sebentar..."
                 tools:ignore="HardcodedText,SpUsage,UseCompatTextViewDrawableXml" />
         </LinearLayout>
     </LinearLayout>
@@ -102,28 +101,14 @@
         android:paddingRight="70dp"
         tools:ignore="RtlHardcoded">
 
-        <EditText
-            android:id="@+id/nim"
-            android:layout_width="238dp"
-            android:layout_height="37dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="0dp"
-            android:layout_marginEnd="22dp"
-            android:background="@drawable/bg_form"
-            android:paddingLeft="10dp"
-            android:hint="  NIM (10 digit)"
-            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
-
-        <ImageButton
-            android:id="@+id/cek"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="2dp"
-            android:background="@drawable/bg_form"
-            android:src="@drawable/cari"
-            android:onClick="caridpt"
-            tools:ignore="ContentDescription" />
+        <Button
+            android:id="@+id/btnvote"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/warningColor"
+            android:text="KEMBALI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
     </RelativeLayout>
 </LinearLayout>

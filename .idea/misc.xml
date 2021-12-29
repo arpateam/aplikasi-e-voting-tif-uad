@@ -3,11 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/bg_button.xml" value="0.240625" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/bg_dialog.xml" value="0.215625" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/cari.xml" value="0.240625" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/dpt.xml" value="0.240625" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/hasilvote.xml" value="0.240625" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/home.xml" value="0.240625" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/reaksi.xml" value="0.240625" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/vote.xml" value="0.240625" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/voteputih.xml" value="0.215625" />
         <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/drawable/yes.xml" value="0.240625" />
         <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/layout/activity_cek_dpt.xml" value="0.21" />
         <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/layout/activity_hasil_vote.xml" value="0.16530797101449277" />
         <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/layout/activity_main.xml" value="0.20974155069582506" />
         <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/layout/caridpt.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/layout/toolbar.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/#ARPATEAM/AndroidStudioProjects/aplikasi-e-voting-tif-uad/app/src/main/res/menu/menu_main.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Elvira PC/AndroidStudioProjects/EVotingTIF/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Elvira PC/AndroidStudioProjects/EVotingTIF/app/src/main/res/drawable/bg_button.xml" value="0.1" />
         <entry key="..\:/Users/Elvira PC/AndroidStudioProjects/EVotingTIF/app/src/main/res/drawable/bg_dialog.xml" value="0.1" />

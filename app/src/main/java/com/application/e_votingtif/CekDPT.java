@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -30,6 +31,7 @@ import java.util.Map;
 
 public class CekDPT extends Activity {
     public static final String url = "https://mywebsasa.000webhostapp.com/data_mahasiswa_aktif.php";
+    Button votebtn,tutorbtn;
     EditText Nim;
     ImageButton Cek;
     TextView TampilNama;
@@ -72,59 +74,6 @@ public class CekDPT extends Activity {
         Toast.makeText(CekDPT.this,"Stop", Toast.LENGTH_SHORT).show();
     }
 
-    public void caridpt() {
-        setContentView(R.layout.caridpt);
-        String nim = Nim.getText().toString();
-        String url = "https://mywebsasa.000webhostapp.com/data_mahasiswa_aktif.php?NIM="+nim;
-
-        TampilNama=(TextView)findViewById(R.id.tampilNama);
-        TampilJadwal=(TextView)findViewById(R.id.tampilJadwal);
-
-        StringRequest stringRequest = new StringRequest(
-                Request.Method.POST,
-                url,
-                new Response.Listener<String>(){
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONArray jsonArray = new JSONArray(response);
-//                            JSONArray gethasil = jsonObject.getJSONArray("hasil");
-
-                            for (int i=0;i<jsonArray.length();i++){
-                                JSONObject getData = jsonArray.getJSONObject(i);
-                                String nama_lengkap = getData.getString("nama_lengkap");
-
-                                TampilNama.setText("Hai "+nama_lengkap+ " !\nAnda terdaftar sebagai DPT");
-                                TampilJadwal.setText("Hari Jum'at, 02 April 2021\njangan lupa untuk memilih ya!");
-                                Toast.makeText(CekDPT.this, nim,Toast.LENGTH_SHORT).show();
-                            }
-//                            TampilNama.setTextColor(Color.RED);
-//                            TampilNama.setText("Anda tidak terdaftar sebagai DPT.\nCek NIM Anda!");
-//                            TampilJadwal.setText("Hari Jum'at, 02 April 2021\njangan lupa untuk memilih ya!");
-
-                        }catch (JSONException e){
-                            e.printStackTrace();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-        })
-        {
-            @Override
-            protected Map<String,String> getParams() throws AuthFailureError{
-                Map<String,String> params = new HashMap<>();
-
-                params.put("nim",nim);
-                return params;
-            }
-        };
-        RequestQueue queue = Volley.newRequestQueue(this);
-        queue.add(stringRequest);
-
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -165,5 +114,67 @@ public class CekDPT extends Activity {
             default :
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void caridpt() {
+        setContentView(R.layout.caridpt);
+        String nim = Nim.getText().toString();
+        String url = "https://www.kpump-tif.arpateam.com/cek-dpt.php?nim="+nim;
+
+        TampilNama=(TextView)findViewById(R.id.tampilNama);
+        TampilJadwal=(TextView)findViewById(R.id.tampilJadwal);
+
+        votebtn=(Button)findViewById(R.id.btnvote);
+
+        votebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent votemulai=new Intent(CekDPT.this, CekDPT.class);
+                startActivity(votemulai);
+            }
+        });
+
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST,
+                url,
+                new Response.Listener<String>(){
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONArray jsonArray = new JSONArray(response);
+
+                            for (int i=0;i<jsonArray.length();i++){
+                                JSONObject getData  = jsonArray.getJSONObject(i);
+                                String identitas    = getData.getString("identitas");
+                                String keterangan   = getData.getString("keterangan");
+
+                                TampilNama.setText(identitas);
+                                TampilJadwal.setText(keterangan);
+                                Toast.makeText(CekDPT.this, nim,Toast.LENGTH_SHORT).show();
+                            }
+
+                        }catch (JSONException e){
+                            e.printStackTrace();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        })
+        {
+            @Override
+            protected Map<String,String> getParams() throws AuthFailureError{
+                Map<String,String> params = new HashMap<>();
+
+                params.put("nim",nim);
+                return params;
+            }
+        };
+        RequestQueue queue = Volley.newRequestQueue(this);
+        queue.add(stringRequest);
+
     }
 }
